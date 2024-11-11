@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIDTECH</title>
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+ <!-- <div id="loading-overlay">
+  <div class="loader"></div>
+</div> -->
+
+  <body>
+    
+
+    <header>
+      <div class="logo">
+        <img src="logo/logo.jpg" alt="logo" style="height: 40px" />
+      </div>
+      <div class="search-bar">
+       <form action="#" method="get">
+         <input type="search" placeholder="Search..." style="color: black" />
+        <button type="submit"><i class="fas fa-search"></i></button>
+       </form>
+      </div>
+
+      <nav>
+        <ul class="navbar">
+          <li><a href="#Home"><i class="fas fa-home"></i>Home</a></li>
+          <li><a href="#About"><i class="fas fa-info-circle"></i>About</a></li>
+          <li><a href="form.html"><i class="fas fa-user"></i>Login/SignUp</a></li>
+          <li>
+            <a href="#projects"><i class="fas fa-project-diagram"></i>Projects</a>
+            <ul class="dropdown">
+              <li><a href="#WebDevelopment"><i class="fas fa-code"></i>WebDevelopment</a></li>
+              <li><a href="#AppDevelopment"><i class="fas fa-mobile-alt"></i>App Development</a></li>
+               <li><a href="#drug-search-section"><i class="fas fa-clock"></i>Drug Search</a></li>
+              <li><a href="#more"><i class="fas fa-plus"></i>More Soon</a></li>
+             
+            </ul>
+          </li>
+          <li><a href="#Contact"><i class="fas fa-envelope"></i>Contact</a></li>
+          <li><a href="#Blog"><i class="fas fa-blog"></i>Blog</a></li>
+          <li><a href="#Soon"><i class="fas fa-clock"></i>Soon</a></li>
+        </ul>
+      </nav>
+    </header>
+<!-- main content -->
+  <main>
+     <!-- 1.Hero Layout(Landing) 
+  Content:
+  Title: A strong tagline <h1>Innovative Solutions,tailored for you!</h2>
+  -->
+    <h1>Innovative Solutions, Tailored for You!</h1>
+    <p>At GIDTECH, we specialize in creating custom digital solutions that empower businesses to thrive in the digital age. Let us help you achieve your goals!</p>
+
+  <!-- A legend -->
+
+  
+   <!-- Experiences Section -->
+  <section class="experience" aria-label="My Experiences">
+    <h2>My Experiences</h2>
+    <p>
+      I have completed a comprehensive training program through the 
+      <strong>Cisco Networking Academy</strong>, where I gained valuable skills in computer networking, troubleshooting, and system management. 
+      This program has equipped me with a solid understanding of network fundamentals, including identifying computer systems and devices, 
+      understanding the Windows directory structure, and effectively using email and social media platforms.
+    </p>
+    <p>
+      My hands-on experience in troubleshooting hardware, software, and network issues has further enhanced my problem-solving abilities, 
+      allowing me to adapt and thrive in dynamic environments. I am eager to apply these skills in real-world scenarios and contribute to innovative tech solutions.
+    </p>
+    <p>
+      Beyond networking, I am also developing my skills in various programming languages and technologies to broaden my expertise 
+      and stay updated with industry trends. I believe that continuous learning is essential in the fast-paced tech landscape.
+    </p>
+  </section>
+ 
+
+
+
+  <!--2. About Me/Introduction 
+  Layout:Split section with image and text on opposite sides
+  optional: A list of skills or tools (programming languages) presented as badges 
+  -->
+  <section class="about">
+    <h2>About GIDTECH</h2>
+    <p>Founded with a passion for technology and innovation, GIDTECH aims to bridge the gap between businesses and technology. Our team of experts is dedicated to delivering top-notch solutions that meet the unique needs of our clients.</p>
+  </section>
+
+  <!--3. Services  -->
+  <section class="services">
+    <h2><i class="fas fa-service"></i>Our Services</h2>
+    <ul>
+        <li>
+            <h3><i class="fas fa-laptop-code"></i>Web Development</h3>
+            <p>Building responsive and dynamic websites tailored to your business needs.</p>
+        </li>
+        <li>
+            <h3><i class="fas fa-mobile-alt">_</i>App Development</h3>
+            <p>Creating user-friendly mobile applications that enhance user engagement.</p>
+        </li>
+        <li>
+          <!-- fas fa-chart-line -->
+            <h3><i class=" fas fa-bullhorn"></i>Digital Marketing</h3>
+            <p>Helping your brand reach a wider audience through targeted marketing strategies.</p>
+        </li>
+    </ul>
+</section>
+
+ 
+    <!-- Portfolio -->
+<section class="portfolio">
+  <!-- fas fa-briefcase -->
+   <!-- fas fa-project-diagram -->
+    <h2>Our Portfolio</h2>
+    <div class="portfolio-item">
+        <h3> <i class="fas fa-briefcase"></i>Project Title 1</h3>
+        <img src="path/to/image1.jpg" alt="Project 1" />
+        <p>A brief description of what this project entails.</p>
+    </div>
+    <div class="portfolio-item">
+        <h3><i class="fas fa-project-diagram"></i>Project Title 2</h3>
+        <img src="path/to/image2.jpg" alt="Project 2" />
+        <p>A brief description of what this project entails.</p>
+    </div>
+</section>
+
+<!-- drug search section -->
+<section id="drug-search-section" class="drug-search">
+  <h2>Drug Information Search</h2>
+  <form id="drug-form">
+    <label for="drug-name">Enter Drug Name:</label>
+    <input type="search" id="drug-name" name="drug-name" placeholder="e.g., Aspirin">
+    <button type="button" onclick="fetchDrugData()">Search</button>
+  </form>
+  <div id="drug-results"></div>
+</section>
+
+
+
+
+<!-- tables -->
+  <!-- <section class="split-area">
+  <div class="left-area">
+    <h2>Left Area</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 1, Cell 1</td>
+          <td>Row 1, Cell 2</td>
+        </tr>
+        <tr>
+          <td>Row 2, Cell 1</td>
+          <td>Row 2, Cell 2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="right-area">
+    <h2>Right Area</h2>
+    <marquee behavior="scroll" direction="left">This is a scrolling marquee example!</marquee>
+  </div>
+</section> -->
+
+<!-- Call to Action -->
+
+
+<!-- Testimonials -->
+
+<!-- Contact Section -->
+ <section class="contact">
+    <h2><i class="fas fa-phone"></i>Contact Us</h2>
+    <p>If you have any questions or would like to discuss a project, feel free to reach out!</p>
+    <p><i class="fas fa-envelope"></i>: <a href="mailto:gideonboadu99@gmail.com">gideonboadu99@gmail.com</a></p>
+    <form action="#" method="post">
+        <label for="name"><i class="fas fa-user"></i></label>
+        <input type="text" id="name" name="name" placeholder="Name..." required>
+        <label for="email"><i class="fas fa-envelope"></i></label>
+        <input type="email" id="email" name="email" placeholder="Email..." required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+    </form>
+</section>
+
+<!-- Blog Section -->
+ <section class="blog">
+    <h2>Latest Insights</h2>
+    <p>Check out our latest blog posts to stay updated on industry trends and insights.</p>
+    <ul>
+        <li><a href="#blog-post-1">Understanding Digital Transformation</a></li>
+        <li><a href="#blog-post-2">The Future of Web Development</a></li>
+    </ul>
+</section>
+<!-- Blog Post 1 -->
+ <section class="blog-post-1">
+
+
+    <!-- A Slider/carousel for services -->
+ </main>
+    <!--  Footer-->
+  <footer class="footer">
+  <section class="footer_about" aria-label="About GIDTECH">
+    <h3>GIDTECH</h3>
+    <p>Building digital solutions that make a difference.</p>
+  </section>
+  <nav class="footer_links" aria-label="Footer Links">
+    <a href="#Home" aria-label="Home"><i class="fas fa-home"></i> Home</a>
+    <a href="#Project" aria-label="Project"><i class="fas fa-tasks"></i> Project</a>
+    <a href="#services" aria-label="Services"><i class="fas fa-concierge-bell"></i> Services</a>
+    <a href="#Blog" aria-label="Blog"><i class="fas fa-blog"></i> Blog</a>
+    <a href="#About" aria-label="About"><i class="fas fa-info-circle"></i> About</a>
+    <a href="#Contact" aria-label="Contact"><i class="fas fa-phone"></i> Contact</a>
+  </nav>
+  <section class="footer_socials" aria-label="Social Media Links">
+    <a href="https://github.com" aria-label="Github">
+      <i class="fab fa-github"></i> Github
+    </a>
+    <a href="https://linkedin.com" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://twitter.com" aria-label="Twitter">
+      <i class="fab fa-twitter"></i> Twitter
+    </a>
+  </section>
+  <section class="footer_contact" aria-label="Contact Information">
+    <p>Email: gideonboadu99@gmail.com</p>
+  </section>
+  <div class="footer_bottom">
+    <p>&copy; 2024 GIDTECH. All Rights Reserved</p>
+  </div>
+</footer>
+
+
+    <script src="drugSearch.js"></script>
+  </body>
+</html>

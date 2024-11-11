@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body
+{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    padding: 0 10px;
+}
+body::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("img/aron-visuals-LSFuPFE9vKE-unsplash.jpg") center/cover;
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    width: 915px;
+    border-radius: 9px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid rgb(188, 185, 185);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter:blur(9px);
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+h2 
+{
+    font-size: 2rem;
+    margin-bottom: 19px;
+    color: white;
+}
+
+.input-space{
+    background-color: silver;
+    border-radius: 12px;
+    position: relative;
+    border-bottom: 3px solid white;
+    margin: 14px 0;
+}
+
+.input-space input{
+    width: 100%;
+    height: 41px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    color: black;
+}
+
+.input-space label {
+    font-size: 1rem;
+    color: #888;
+    left: 10px;
+    top: 10px;
+}
+
+.input-space input:focus~label,
+.input-space input:not(:placeholder-shown)~label {
+    font-size: 0.8rem;
+    color: white;
+    top: -10px;
+    left: 5px;
+}
+
+.remember-forgot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 26px p 36px 0;
+    color: whitesmoke;
+    margin-bottom: 15px;
+
+}
+#remember-me{
+    accent-color: white;
+}
+
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.container a{
+    text-decoration: none;
+    color: white;
+}
+
+.container a:hover{
+    text-decoration: underline;
+    cursor: alias;
+    color: blue;
+}
+button{
+     background: linear-gradient(to right, #4c4c4c, #1e1e1e);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 12px ;
+    border-color: black;
+    color: white;
+    margin-bottom: 7px;
+    height: 40px;
+    font-style: italic;
+    font-weight: 900;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover{
+    color: whitesmoke;
+    border-color: white;
+   background: linear-gradient(to left, #6d6d6d, #2b2b2b);
+}
+.register{
+    text-align: center;
+    margin-top: 29px;
+    color: whitesmoke;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-space input {
+        font-size: 1rem;
+    }
+}
